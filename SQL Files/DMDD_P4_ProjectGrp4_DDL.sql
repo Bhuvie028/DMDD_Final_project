@@ -643,7 +643,7 @@ END
 alter table customer add CustomerPassword_Encrypt varbinary(MAX)
 
 create MASTER KEY 
-ENCRYPTION BY PASSWORD = 'UselessProjectEncrypt*';
+ENCRYPTION BY PASSWORD = 'ProjectEncrypt*';
 SELECT name KeyName,
   symmetric_key_id KeyID,
   key_length KeyLength,
